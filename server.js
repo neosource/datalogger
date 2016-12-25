@@ -21,7 +21,7 @@ app.post('/data',(req, res) => {
   });
 });
 
-MongoClient.connect('mongodb://neosource:900Rr756@ds145118.mlab.com:45118/datalogger', (err, database) => {
+MongoClient.connect('mongodb://datalog:d1a2t3a4@ds145118.mlab.com:45118/datalogger', (err, database) => {
   if(err) return console.log(err);
   db = database;
   app.listen(port, () => {
